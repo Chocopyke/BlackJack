@@ -35,9 +35,6 @@ namespace BlackJack
 
             Card card = new Card();
 
-            //card = boBai.getCard();
-            //com.addCard(card);
-            card = new Card();
             DrawCard(card, com.getLoaiNguoi(), 1);
             Thread.Sleep(100);
 
@@ -46,8 +43,6 @@ namespace BlackJack
             DrawCard(card, user.getLoaiNguoi(), user.getNumberCard(1));
             Thread.Sleep(100);
 
-            //card = boBai.getCard();
-            //com.addCard(card);
             card = new Card();
             DrawCard(card, com.getLoaiNguoi(), 2);
             Thread.Sleep(100);
@@ -352,12 +347,12 @@ namespace BlackJack
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
+            temp -= 9;
             
-            label2.Text = (user.getSum(1)).ToString();
+            label2.Text = (user.getSum(-9)).ToString();
             radioButton1.Visible = false;
             radioButton2.Visible = false;
-            user.getSum(1);
+            user.getSum(-9);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -365,11 +360,11 @@ namespace BlackJack
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 11;
-            label2.Text = (user.getSum(11)).ToString();
+            temp += 1;
+            label2.Text = (user.getSum(1)).ToString();
             radioButton1.Visible = false;
             radioButton2.Visible = false;
-            user.getSum(11);
+            user.getSum(1);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -377,11 +372,11 @@ namespace BlackJack
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
+            temp -= 9;
+            label2.Text = (user.getSum(-9)).ToString();
             radioButton3.Visible = false;
             radioButton4.Visible = false;
-            user.getSum(1);
+            user.getSum(-9);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -389,11 +384,11 @@ namespace BlackJack
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 11;
-            label2.Text = (user.getSum(11)).ToString();
+            temp += 1;
+            label2.Text = (user.getSum(1)).ToString();
             radioButton3.Visible = false;
             radioButton4.Visible = false;
-            user.getSum(11);
+            user.getSum(1);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -401,11 +396,11 @@ namespace BlackJack
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
+            temp -= 9;
+            label2.Text = (user.getSum(-9)).ToString();
             radioButton5.Visible = false;
             radioButton6.Visible = false;
-            user.getSum(1);
+            user.getSum(-9);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -413,11 +408,11 @@ namespace BlackJack
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 11;
-            label2.Text = (user.getSum(11)).ToString();
+            temp += 1;
+            label2.Text = (user.getSum(1)).ToString();
             radioButton5.Visible = false;
             radioButton6.Visible = false;
-            user.getSum(11);
+            user.getSum(1);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -425,11 +420,11 @@ namespace BlackJack
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
+            temp -= 9;
+            label2.Text = (user.getSum(-9)).ToString();
             radioButton7.Visible = false;
             radioButton8.Visible = false;
-            user.getSum(1);
+            user.getSum(-9);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -437,11 +432,11 @@ namespace BlackJack
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 11;
-            label2.Text = (user.getSum(11)).ToString();
+            temp += 1;
+            label2.Text = (user.getSum(1)).ToString();
             radioButton7.Visible = false;
             radioButton8.Visible = false;
-            user.getSum(11);
+            user.getSum(1);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -449,11 +444,11 @@ namespace BlackJack
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
+            temp -= 9;
+            label2.Text = (user.getSum(-9)).ToString();
             radioButton9.Visible = false;
             radioButton10.Visible = false;
-            user.getSum(1);
+            user.getSum(-9);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -461,11 +456,11 @@ namespace BlackJack
         private void radioButton9_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp += 11;
-            label2.Text = (user.getSum(11)).ToString();
+            temp += 1;
+            label2.Text = (user.getSum(1)).ToString();
             radioButton9.Visible = false;
             radioButton10.Visible = false;
-            user.getSum(11);
+            user.getSum(1);
             if (Int32.Parse(label2.Text.Trim()) > 16)
                 btnDan.Visible = true;
         }
@@ -506,6 +501,11 @@ namespace BlackJack
             Form1 form1 = new Form1();
             this.Hide();
             form1.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

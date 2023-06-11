@@ -79,6 +79,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainMutiplayer";
             this.Text = "MainMutiplayer";
+            this.Load += new System.EventHandler(this.MainMutiplayer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

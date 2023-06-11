@@ -33,8 +33,8 @@
             // 
             // listMess
             // 
-            this.listMess.Location = new System.Drawing.Point(291, 266);
-            this.listMess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listMess.Location = new System.Drawing.Point(287, 265);
+            this.listMess.Margin = new System.Windows.Forms.Padding(4);
             this.listMess.Name = "listMess";
             this.listMess.Size = new System.Drawing.Size(717, 274);
             this.listMess.TabIndex = 1;
@@ -48,7 +48,7 @@
             this.BackgroundImage = global::BlackJack.Properties.Resources.FormMain_1x;
             this.ClientSize = new System.Drawing.Size(1292, 689);
             this.Controls.Add(this.listMess);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Muti_Server";
             this.Text = "Muti_Server";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Muti_Server_FormClosed);

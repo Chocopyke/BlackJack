@@ -12,6 +12,7 @@ namespace BlackJack
 {
     public partial class MainMutiplayer : Form
     {
+        int countClient = 0;
         public MainMutiplayer()
         {
             InitializeComponent();
@@ -26,8 +27,17 @@ namespace BlackJack
 
         private void materialFlatButton2_Click(object sender, EventArgs e)
         {
-            Multi_Client multi_Client = new Multi_Client();
-            multi_Client.Show();
+            if (countClient < 5)
+            {
+                countClient++;
+                Multi_Client multi_Client = new Multi_Client();
+                multi_Client.Show();
+            }
+            else MessageBox.Show("Đã đạt số Client tối đa!");
+        }
+        private void MainMutiplayer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,7 +36,7 @@ namespace BlackJack
             i = random.Next(1, 5);
             switch(i){
                 case 1:
-                    temp += "R"; //cơ
+                    temp += "R";//rô
                     break;
                 case 2:
                     temp += "B"; //bích
@@ -45,7 +45,7 @@ namespace BlackJack
                     temp += "H";// chuồn
                     break;
                 case 4:
-                    temp += "C";//rô
+                    temp += "C";//cơ
                     break;
             }
             return temp;
@@ -76,4 +76,3 @@ namespace BlackJack
         }
     }
 }
-//test

@@ -19,6 +19,16 @@ namespace BlackJack
 {
     public partial class Muti_Server : Form
     {
+        BoBai boBai;
+        IPEndPoint IP;
+        Socket server;
+        List<Socket> clientList;
+        int tempSL = 0;
+        int tempPlayer = 0;
+        string ipclient;
+        string tempCai = "";
+
+        SqlConnection conn = new SqlConnection("Server=.;database=Client;Integrated Security=True");
         public Muti_Server()
         {
             InitializeComponent();
@@ -28,32 +38,15 @@ namespace BlackJack
             boBai = new BoBai();
             Connect();
         }
-        SqlConnection conn = new SqlConnection("Server=.;database=Client;Integrated Security=True");
+        
         
 
         private void Muti_Server_Load(object sender, EventArgs e)
         {
             conn.Open();
+        } 
 
-        }
-        //public DataSet LoadData(string strLenh)
-        //{
-        //    DataSet ds = new DataSet();
-        //    Create_Connect();
-        //    SqlDataAdapter da = new SqlDataAdapter(strLenh, strConnect);
-        //    da.Fill(ds);
-        //    CloseConnect();
-        //    return ds;
-        //}
-
-        BoBai boBai;
-        IPEndPoint IP;
-        Socket server;
-        List<Socket> clientList;
-        int tempSL = 0;
-        int tempPlayer = 0;
-        string ipclient;
-        string tempCai = "";
+        
         
         void Connect()
         {
@@ -70,11 +63,12 @@ namespace BlackJack
                 {
                     while (true)
                     {
-                        if (clientList.Count == 5)
+                        if (clientList.Count() == 5)
                         {
                             AddMessage("Đã đạt số client tối đa".ToString());
                             return;
                         }
+
                         server.Listen(100);
                         Socket client = server.Accept();
                         clientList.Add(client);
@@ -108,13 +102,11 @@ namespace BlackJack
             Listen.IsBackground = true;
             Listen.Start();
         }
-        //đống kết nối
         void Close()
         {
             server.Close();
         }
 
-        //nhận tin
         void Receive(object obj)
         {
             Socket client = obj as Socket;
@@ -192,7 +184,7 @@ namespace BlackJack
                                         Thread.Sleep(100);
                                     }
                                     
-                                    foreach (Socket item in clientList) //đợi
+                                    foreach (Socket item in clientList)
                                     {
                                         item.Send(Serialize("02:"));
                                     }

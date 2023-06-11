@@ -57,6 +57,7 @@ namespace BlackJack
             }
             catch
             {
+
             }
 
             Thread listen = new Thread(Receive);
@@ -64,12 +65,10 @@ namespace BlackJack
             listen.IsBackground = true;
             listen.Start();
         }
-        //đống kết nối
         void Close()
         {
             client.Close();
         }
-        //gởi tin
         void Send()
         {
             if ((txtMess.Text != string.Empty) || (txtName.Text != string.Empty))
@@ -88,7 +87,6 @@ namespace BlackJack
                 client.Send(Serialize(temp));
             }
         }
-        //nhận tin
         void Receive()
         {
             while (true)
