@@ -13,10 +13,10 @@ namespace BlackJack
         {
             removeListCards = new List<Card>();
         }
-        private string RandomId()
+        private string RandomId() //random giá trị + chất của lá bài
         {
             string temp="";
-            Random random = new Random();
+            Random random = new Random(); //random các giá trị cho quân bài, nếu > 10 sẽ là các quân bài J, Q, K
             int i = random.Next(1, 14);
             switch (i)
             {
@@ -33,8 +33,8 @@ namespace BlackJack
                     temp = i.ToString();
                     break;
             }
-            i = random.Next(1, 5);
-            switch(i){
+            i = random.Next(1, 5); //random chất cơ, rô, chuồn, bích
+            switch (i){
                 case 1:
                     temp += "R";//rô
                     break;
@@ -47,10 +47,10 @@ namespace BlackJack
                 case 4:
                     temp += "C";//cơ
                     break;
-            }
+            } 
             return temp;
         }
-        private bool AddRemoveList(string id)
+        private bool AddRemoveList(string id) //đánh dấu xem lá bài đã được lấy ra khỏi bộ bài hay chưa
         {
             foreach(Card c in removeListCards)
             {
@@ -59,7 +59,7 @@ namespace BlackJack
             }
             return true;
         }
-        public Card getCard()
+        public Card getCard() //rút bài
         {
             string id = "";
             do
@@ -67,7 +67,7 @@ namespace BlackJack
                 id = RandomId();
             } while (AddRemoveList(id) != true);
             Card card = new Card(id);
-            this.removeListCards.Add(card);
+            this.removeListCards.Add(card); //lá được rút sẽ bị loại ra ngoài
             return card;
         }
         public void resetRomeveList()
