@@ -1407,5 +1407,10 @@ namespace BlackJack
         {
 
         }
+
+        private void ketQua_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

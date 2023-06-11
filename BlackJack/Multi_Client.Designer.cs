@@ -931,6 +931,7 @@
             this.ketQua.TabIndex = 91;
             this.ketQua.Text = "label5";
             this.ketQua.Visible = false;
+            this.ketQua.Click += new System.EventHandler(this.ketQua_Click);
             // 
             // pBc2
             // 
