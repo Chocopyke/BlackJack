@@ -294,176 +294,29 @@ namespace BlackJack
                 switch (num)
                 {
                     case 1:
-                        if(card.getIdCard().Substring(0, card.getIdCard().Length == 2 ? 1 : 2) =="1")
-                        {
-                            radioButton1.Visible = true;
-                            radioButton2.Visible = true;
-                        }
                         pictureBox6.Image = pb.Image;
                         pictureBox6.Visible = true;
                         break;
                     case 2:
-                        if (card.getIdCard().Substring(0, card.getIdCard().Length == 2 ? 1 : 2) == "1")
-                        {
-                            radioButton3.Visible = true;
-                            radioButton4.Visible = true;
-                        }
+
                         pictureBox7.Image = pb.Image;
                         pictureBox7.Visible = true;
                         break;
                     case 3:
-                        if (card.getIdCard().Substring(0, card.getIdCard().Length == 2 ? 1 : 2) == "1")
-                        {
-                            radioButton5.Visible = true;
-                            radioButton6.Visible = true;
-                        }
                         pictureBox8.Image = pb.Image;
                         pictureBox8.Visible = true;
                         break;
                     case 4:
-                        if (card.getIdCard().Substring(0, card.getIdCard().Length == 2 ? 1 : 2) == "1")
-                        {
-                            radioButton7.Visible = true;
-                            radioButton8.Visible = true;
-                        }
                         pictureBox9.Image = pb.Image;
                         pictureBox9.Visible = true;
                         break;
                     case 5:
-                        if (card.getIdCard().Substring(0, card.getIdCard().Length == 2 ? 1 : 2) == "1")
-                        {
-                            radioButton9.Visible = true;
-                            radioButton10.Visible = true;
-                        }
                         pictureBox10.Image = pb.Image;
                         pictureBox10.Visible = true;
                         break;
                 }
             }
-
-
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += -9;
-            label2.Text = (user.getSum(-9)).ToString();
-            radioButton1.Visible = false;
-            radioButton2.Visible = false;
-            user.getSum(-9);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
-            radioButton1.Visible = false;
-            radioButton2.Visible = false;
-            user.getSum(1);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += -9;
-            label2.Text = (user.getSum(-9)).ToString();
-            radioButton3.Visible = false;
-            radioButton4.Visible = false;
-            user.getSum(-9);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
-            radioButton3.Visible = false;
-            radioButton4.Visible = false;
-            user.getSum(1);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp -= 9;
-            label2.Text = (user.getSum(-9)).ToString();
-            radioButton5.Visible = false;
-            radioButton6.Visible = false;
-            user.getSum(-9);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
-            radioButton5.Visible = false;
-            radioButton6.Visible = false;
-            user.getSum(1);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp -= 9;
-            label2.Text = (user.getSum(-9)).ToString();
-            radioButton7.Visible = false;
-            radioButton8.Visible = false;
-            user.getSum(-9);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
-            radioButton7.Visible = false;
-            radioButton8.Visible = false;
-            user.getSum(1);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton10_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp -= 9;
-            label2.Text = (user.getSum(-9)).ToString();
-            radioButton9.Visible = false;
-            radioButton10.Visible = false;
-            user.getSum(-9);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
-        private void radioButton9_CheckedChanged(object sender, EventArgs e)
-        {
-            int temp = int.Parse(label2.Text.Trim());
-            temp += 1;
-            label2.Text = (user.getSum(1)).ToString();
-            radioButton9.Visible = false;
-            radioButton10.Visible = false;
-            user.getSum(1);
-            if (Int32.Parse(label2.Text.Trim()) > 16)
-                btnDan.Visible = true;
-        }
-
        
         public void KetQua(int com, int user, int numCom, int numUser)
         {

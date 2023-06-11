@@ -99,6 +99,35 @@ namespace BlackJack
 
                     string message = Deserialize(data).ToString();
 
+                    //00: start
+                    //01: Mess
+                    //02: đợi
+                    //03: Đã rút
+                    //04: Rut
+                    //05: Dan
+                    //06: Xet bai
+
+
+                    //07:Số lượng người chơi vidu: 7:20213 --->2 người chơi 1-> có 2 lá 2-> có 2 lá
+                    //08: Server hỏi client
+
+                    //09: nhà cái
+
+
+                    //30: Xét bài
+
+                    //11: udate numbercard
+
+                    //2*: Get vào SQLServer
+                    //20: Get số lượng người chơi
+                    //21: Lấy số lượng người chơi
+                    //22: Lấy IP người chơi 1  21:1
+                    //   2 Lấy IP người chơi 2
+                    //   3 Lấy IP người chơi 3
+                    //   4 Lấy IP người chơi 4
+                    //   5 Lấy IP người chơi 5
+
+                    //20: Truy xuất SQL Server
                     switch (message.Substring(0, 3))
                     {
                         case "00:":
@@ -1370,6 +1399,11 @@ namespace BlackJack
         }
 
         private void waitingLoading_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Multi_Client_Load(object sender, EventArgs e)
         {
 
         }

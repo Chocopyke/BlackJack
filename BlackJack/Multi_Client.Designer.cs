@@ -135,7 +135,7 @@
             // 
             this.btnSend.ForeColor = System.Drawing.Color.Black;
             this.btnSend.Location = new System.Drawing.Point(215, 676);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(63, 28);
             this.btnSend.TabIndex = 11;
@@ -173,7 +173,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(20, 628);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(95, 22);
             this.txtName.TabIndex = 8;
@@ -182,7 +182,7 @@
             // txtMess
             // 
             this.txtMess.Location = new System.Drawing.Point(20, 676);
-            this.txtMess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMess.Margin = new System.Windows.Forms.Padding(4);
             this.txtMess.Multiline = true;
             this.txtMess.Name = "txtMess";
             this.txtMess.Size = new System.Drawing.Size(185, 24);
@@ -251,7 +251,7 @@
             this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.ForeColor = System.Drawing.Color.OrangeRed;
             this.radioButton9.Location = new System.Drawing.Point(843, 524);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(63, 30);
             this.radioButton9.TabIndex = 47;
@@ -266,7 +266,7 @@
             this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.ForeColor = System.Drawing.Color.White;
             this.radioButton10.Location = new System.Drawing.Point(787, 524);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(48, 30);
             this.radioButton10.TabIndex = 46;
@@ -281,7 +281,7 @@
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.Color.OrangeRed;
             this.radioButton7.Location = new System.Drawing.Point(744, 524);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(63, 30);
             this.radioButton7.TabIndex = 45;
@@ -296,7 +296,7 @@
             this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton8.ForeColor = System.Drawing.Color.White;
             this.radioButton8.Location = new System.Drawing.Point(688, 524);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(48, 30);
             this.radioButton8.TabIndex = 44;
@@ -311,7 +311,7 @@
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.ForeColor = System.Drawing.Color.OrangeRed;
             this.radioButton5.Location = new System.Drawing.Point(639, 524);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(63, 30);
             this.radioButton5.TabIndex = 43;
@@ -326,7 +326,7 @@
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.ForeColor = System.Drawing.Color.White;
             this.radioButton6.Location = new System.Drawing.Point(583, 524);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(48, 30);
             this.radioButton6.TabIndex = 42;
@@ -341,7 +341,7 @@
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.OrangeRed;
             this.radioButton3.Location = new System.Drawing.Point(539, 524);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(63, 30);
             this.radioButton3.TabIndex = 41;
@@ -356,7 +356,7 @@
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.Color.White;
             this.radioButton4.Location = new System.Drawing.Point(483, 524);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(48, 30);
             this.radioButton4.TabIndex = 40;
@@ -371,7 +371,7 @@
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.OrangeRed;
             this.radioButton2.Location = new System.Drawing.Point(416, 527);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(63, 30);
             this.radioButton2.TabIndex = 39;
@@ -386,7 +386,7 @@
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(360, 527);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(48, 30);
             this.radioButton1.TabIndex = 38;
@@ -399,7 +399,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Location = new System.Drawing.Point(384, 561);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(95, 118);
             this.pictureBox6.TabIndex = 37;
@@ -409,7 +409,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Location = new System.Drawing.Point(487, 561);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(95, 118);
             this.pictureBox7.TabIndex = 36;
@@ -419,7 +419,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Location = new System.Drawing.Point(589, 561);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(95, 118);
             this.pictureBox8.TabIndex = 35;
@@ -429,7 +429,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Location = new System.Drawing.Point(692, 561);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(95, 118);
             this.pictureBox9.TabIndex = 34;
@@ -439,7 +439,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Location = new System.Drawing.Point(795, 561);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(95, 118);
             this.pictureBox10.TabIndex = 33;
@@ -507,7 +507,7 @@
             // listMess
             // 
             this.listMess.Location = new System.Drawing.Point(21, 535);
-            this.listMess.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listMess.Margin = new System.Windows.Forms.Padding(4);
             this.listMess.Name = "listMess";
             this.listMess.Size = new System.Drawing.Size(255, 68);
             this.listMess.TabIndex = 55;
@@ -571,7 +571,7 @@
             this.pbplayer11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer11.BackgroundImage")));
             this.pbplayer11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer11.Location = new System.Drawing.Point(16, 430);
-            this.pbplayer11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer11.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer11.Name = "pbplayer11";
             this.pbplayer11.Size = new System.Drawing.Size(35, 44);
             this.pbplayer11.TabIndex = 63;
@@ -583,7 +583,7 @@
             this.pbplayer12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer12.BackgroundImage")));
             this.pbplayer12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer12.Location = new System.Drawing.Point(59, 430);
-            this.pbplayer12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer12.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer12.Name = "pbplayer12";
             this.pbplayer12.Size = new System.Drawing.Size(35, 44);
             this.pbplayer12.TabIndex = 64;
@@ -595,7 +595,7 @@
             this.pbplayer13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer13.BackgroundImage")));
             this.pbplayer13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer13.Location = new System.Drawing.Point(101, 430);
-            this.pbplayer13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer13.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer13.Name = "pbplayer13";
             this.pbplayer13.Size = new System.Drawing.Size(35, 44);
             this.pbplayer13.TabIndex = 65;
@@ -607,7 +607,7 @@
             this.pbplayer14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer14.BackgroundImage")));
             this.pbplayer14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer14.Location = new System.Drawing.Point(144, 430);
-            this.pbplayer14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer14.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer14.Name = "pbplayer14";
             this.pbplayer14.Size = new System.Drawing.Size(35, 44);
             this.pbplayer14.TabIndex = 66;
@@ -619,7 +619,7 @@
             this.pbplayer15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer15.BackgroundImage")));
             this.pbplayer15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer15.Location = new System.Drawing.Point(187, 430);
-            this.pbplayer15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer15.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer15.Name = "pbplayer15";
             this.pbplayer15.Size = new System.Drawing.Size(35, 44);
             this.pbplayer15.TabIndex = 67;
@@ -631,7 +631,7 @@
             this.pbplayer25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer25.BackgroundImage")));
             this.pbplayer25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer25.Location = new System.Drawing.Point(232, 233);
-            this.pbplayer25.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer25.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer25.Name = "pbplayer25";
             this.pbplayer25.Size = new System.Drawing.Size(35, 44);
             this.pbplayer25.TabIndex = 72;
@@ -643,7 +643,7 @@
             this.pbplayer24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer24.BackgroundImage")));
             this.pbplayer24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer24.Location = new System.Drawing.Point(189, 233);
-            this.pbplayer24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer24.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer24.Name = "pbplayer24";
             this.pbplayer24.Size = new System.Drawing.Size(35, 44);
             this.pbplayer24.TabIndex = 71;
@@ -655,7 +655,7 @@
             this.pbplayer23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer23.BackgroundImage")));
             this.pbplayer23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer23.Location = new System.Drawing.Point(147, 233);
-            this.pbplayer23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer23.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer23.Name = "pbplayer23";
             this.pbplayer23.Size = new System.Drawing.Size(35, 44);
             this.pbplayer23.TabIndex = 70;
@@ -667,7 +667,7 @@
             this.pbplayer22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer22.BackgroundImage")));
             this.pbplayer22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer22.Location = new System.Drawing.Point(104, 233);
-            this.pbplayer22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer22.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer22.Name = "pbplayer22";
             this.pbplayer22.Size = new System.Drawing.Size(35, 44);
             this.pbplayer22.TabIndex = 69;
@@ -679,7 +679,7 @@
             this.pbplayer21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer21.BackgroundImage")));
             this.pbplayer21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer21.Location = new System.Drawing.Point(61, 233);
-            this.pbplayer21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer21.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer21.Name = "pbplayer21";
             this.pbplayer21.Size = new System.Drawing.Size(35, 44);
             this.pbplayer21.TabIndex = 68;
@@ -691,7 +691,7 @@
             this.pbplayer35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer35.BackgroundImage")));
             this.pbplayer35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer35.Location = new System.Drawing.Point(1076, 233);
-            this.pbplayer35.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer35.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer35.Name = "pbplayer35";
             this.pbplayer35.Size = new System.Drawing.Size(35, 44);
             this.pbplayer35.TabIndex = 77;
@@ -703,7 +703,7 @@
             this.pbplayer34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer34.BackgroundImage")));
             this.pbplayer34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer34.Location = new System.Drawing.Point(1033, 233);
-            this.pbplayer34.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer34.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer34.Name = "pbplayer34";
             this.pbplayer34.Size = new System.Drawing.Size(35, 44);
             this.pbplayer34.TabIndex = 76;
@@ -715,7 +715,7 @@
             this.pbplayer33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer33.BackgroundImage")));
             this.pbplayer33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer33.Location = new System.Drawing.Point(991, 233);
-            this.pbplayer33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer33.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer33.Name = "pbplayer33";
             this.pbplayer33.Size = new System.Drawing.Size(35, 44);
             this.pbplayer33.TabIndex = 75;
@@ -727,7 +727,7 @@
             this.pbplayer32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer32.BackgroundImage")));
             this.pbplayer32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer32.Location = new System.Drawing.Point(948, 233);
-            this.pbplayer32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer32.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer32.Name = "pbplayer32";
             this.pbplayer32.Size = new System.Drawing.Size(35, 44);
             this.pbplayer32.TabIndex = 74;
@@ -739,7 +739,7 @@
             this.pbplayer31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer31.BackgroundImage")));
             this.pbplayer31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer31.Location = new System.Drawing.Point(905, 233);
-            this.pbplayer31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer31.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer31.Name = "pbplayer31";
             this.pbplayer31.Size = new System.Drawing.Size(35, 44);
             this.pbplayer31.TabIndex = 73;
@@ -751,7 +751,7 @@
             this.pbplayer45.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer45.BackgroundImage")));
             this.pbplayer45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer45.Location = new System.Drawing.Point(1245, 412);
-            this.pbplayer45.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer45.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer45.Name = "pbplayer45";
             this.pbplayer45.Size = new System.Drawing.Size(35, 44);
             this.pbplayer45.TabIndex = 82;
@@ -763,7 +763,7 @@
             this.pbplayer44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer44.BackgroundImage")));
             this.pbplayer44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer44.Location = new System.Drawing.Point(1203, 412);
-            this.pbplayer44.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer44.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer44.Name = "pbplayer44";
             this.pbplayer44.Size = new System.Drawing.Size(35, 44);
             this.pbplayer44.TabIndex = 81;
@@ -775,7 +775,7 @@
             this.pbplayer43.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer43.BackgroundImage")));
             this.pbplayer43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer43.Location = new System.Drawing.Point(1160, 412);
-            this.pbplayer43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer43.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer43.Name = "pbplayer43";
             this.pbplayer43.Size = new System.Drawing.Size(35, 44);
             this.pbplayer43.TabIndex = 80;
@@ -787,7 +787,7 @@
             this.pbplayer42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer42.BackgroundImage")));
             this.pbplayer42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer42.Location = new System.Drawing.Point(1117, 412);
-            this.pbplayer42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer42.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer42.Name = "pbplayer42";
             this.pbplayer42.Size = new System.Drawing.Size(35, 44);
             this.pbplayer42.TabIndex = 79;
@@ -799,7 +799,7 @@
             this.pbplayer41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer41.BackgroundImage")));
             this.pbplayer41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbplayer41.Location = new System.Drawing.Point(1075, 412);
-            this.pbplayer41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbplayer41.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer41.Name = "pbplayer41";
             this.pbplayer41.Size = new System.Drawing.Size(35, 44);
             this.pbplayer41.TabIndex = 78;
@@ -812,7 +812,7 @@
             this.ckplayer1.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ckplayer1.Location = new System.Drawing.Point(247, 364);
-            this.ckplayer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckplayer1.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer1.Name = "ckplayer1";
             this.ckplayer1.Size = new System.Drawing.Size(67, 62);
             this.ckplayer1.TabIndex = 83;
@@ -826,7 +826,7 @@
             this.ckplayer2.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ckplayer2.Location = new System.Drawing.Point(329, 156);
-            this.ckplayer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckplayer2.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer2.Name = "ckplayer2";
             this.ckplayer2.Size = new System.Drawing.Size(67, 62);
             this.ckplayer2.TabIndex = 84;
@@ -840,7 +840,7 @@
             this.ckplayer3.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ckplayer3.Location = new System.Drawing.Point(768, 156);
-            this.ckplayer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckplayer3.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer3.Name = "ckplayer3";
             this.ckplayer3.Size = new System.Drawing.Size(67, 62);
             this.ckplayer3.TabIndex = 85;
@@ -854,7 +854,7 @@
             this.ckplayer4.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ckplayer4.Location = new System.Drawing.Point(1004, 348);
-            this.ckplayer4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckplayer4.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer4.Name = "ckplayer4";
             this.ckplayer4.Size = new System.Drawing.Size(67, 62);
             this.ckplayer4.TabIndex = 86;
@@ -938,7 +938,7 @@
             this.pBc2.BackgroundImage = global::BlackJack.Properties.Resources.Asset_8;
             this.pBc2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pBc2.Location = new System.Drawing.Point(276, 96);
-            this.pBc2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pBc2.Margin = new System.Windows.Forms.Padding(4);
             this.pBc2.Name = "pBc2";
             this.pBc2.Size = new System.Drawing.Size(76, 57);
             this.pBc2.TabIndex = 92;
@@ -951,7 +951,7 @@
             this.pBc1.BackgroundImage = global::BlackJack.Properties.Resources.Asset_8;
             this.pBc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pBc1.Location = new System.Drawing.Point(201, 293);
-            this.pBc1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pBc1.Margin = new System.Windows.Forms.Padding(4);
             this.pBc1.Name = "pBc1";
             this.pBc1.Size = new System.Drawing.Size(76, 57);
             this.pBc1.TabIndex = 93;
@@ -964,7 +964,7 @@
             this.pBc3.BackgroundImage = global::BlackJack.Properties.Resources.Asset_8___Copy;
             this.pBc3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pBc3.Location = new System.Drawing.Point(829, 96);
-            this.pBc3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pBc3.Margin = new System.Windows.Forms.Padding(4);
             this.pBc3.Name = "pBc3";
             this.pBc3.Size = new System.Drawing.Size(76, 57);
             this.pBc3.TabIndex = 94;
@@ -977,7 +977,7 @@
             this.pBc4.BackgroundImage = global::BlackJack.Properties.Resources.Asset_8___Copy;
             this.pBc4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pBc4.Location = new System.Drawing.Point(1073, 284);
-            this.pBc4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pBc4.Margin = new System.Windows.Forms.Padding(4);
             this.pBc4.Name = "pBc4";
             this.pBc4.Size = new System.Drawing.Size(76, 57);
             this.pBc4.TabIndex = 95;
@@ -1058,10 +1058,11 @@
             this.Controls.Add(this.player3);
             this.Controls.Add(this.player2);
             this.Controls.Add(this.player1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Multi_Client";
             this.Text = "Multi_Client";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Client_FormClosed);
+            this.Load += new System.EventHandler(this.Multi_Client_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
