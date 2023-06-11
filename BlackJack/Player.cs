@@ -48,20 +48,36 @@ namespace BlackJack
         public int getSum()
         {
             int sum = 0;
+            int countA = 0; // Initialize count of A cards to 0
             foreach (Card c in cards)
             {
-                if (c.getIdCard().Substring(0, c.getIdCard().Length == 2 ? 1 : 2) != "1")
-                    sum += c.getValue();
-                else
+                if (c.getValue() == 1) // If the card is an A, increment the count of A cards
                 {
-                    if (this.getNumberCard() == 2 )
-                        sum += 11;
-                    else if (this.getNumberCard() == 3 && sum <= 11)
-                        sum += 10;
-                    else 
-                        sum += 1;
+                    countA++;
+                }
+                else // If the card is not an A, add its value to the sum
+                {
+                    sum += c.getValue();
                 }
             }
+
+            // Adjust the sum based on the count of A cards
+            for (int i = 0; i < countA; i++)
+            {
+                if (sum + 11 <= 21) // If adding 11 would not cause a bust, use the higher value for A
+                {
+                    sum += 11;
+                }
+                else if (sum + 10 <= 21)
+                {
+                    sum += 10;
+                }
+                else // Otherwise, use the lower value for A
+                {
+                    sum += 1;
+                }
+            }
+
             Sum = sum;
             return Sum;
         }

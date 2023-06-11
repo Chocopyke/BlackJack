@@ -347,8 +347,7 @@ namespace BlackJack
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp -= 9;
-            
+            temp += -9;
             label2.Text = (user.getSum(-9)).ToString();
             radioButton1.Visible = false;
             radioButton2.Visible = false;
@@ -372,7 +371,7 @@ namespace BlackJack
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             int temp = int.Parse(label2.Text.Trim());
-            temp -= 9;
+            temp += -9;
             label2.Text = (user.getSum(-9)).ToString();
             radioButton3.Visible = false;
             radioButton4.Visible = false;
