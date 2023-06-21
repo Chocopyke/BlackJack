@@ -13,7 +13,7 @@ namespace BlackJack
         {
             removeListCards = new List<Card>();
         }
-        private string RandomId() //random giá trị + chất của lá bài
+        private string RandomId() //random giá trị + chất của lá bài    
         {
             string temp="";
             Random random = new Random(); //random các giá trị cho quân bài, nếu > 10 sẽ là các quân bài J, Q, K

@@ -39,7 +39,7 @@
             this.btnSinglePlayer.Depth = 0;
             this.btnSinglePlayer.Icon = null;
             this.btnSinglePlayer.Location = new System.Drawing.Point(321, 313);
-            this.btnSinglePlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSinglePlayer.Margin = new System.Windows.Forms.Padding(4);
             this.btnSinglePlayer.MaximumSize = new System.Drawing.Size(265, 48);
             this.btnSinglePlayer.MinimumSize = new System.Drawing.Size(265, 48);
             this.btnSinglePlayer.MouseState = MaterialSkin.MouseState.HOVER;
@@ -58,7 +58,7 @@
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.Icon = null;
             this.materialRaisedButton2.Location = new System.Drawing.Point(699, 313);
-            this.materialRaisedButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialRaisedButton2.Margin = new System.Windows.Forms.Padding(4);
             this.materialRaisedButton2.MaximumSize = new System.Drawing.Size(265, 48);
             this.materialRaisedButton2.MinimumSize = new System.Drawing.Size(265, 48);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;

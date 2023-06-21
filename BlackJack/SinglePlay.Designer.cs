@@ -123,7 +123,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(392, 544);
+            this.pictureBox6.Location = new System.Drawing.Point(392, 474);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(95, 118);
@@ -133,7 +133,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Location = new System.Drawing.Point(495, 544);
+            this.pictureBox7.Location = new System.Drawing.Point(494, 474);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(95, 118);
@@ -143,7 +143,7 @@
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Location = new System.Drawing.Point(597, 544);
+            this.pictureBox8.Location = new System.Drawing.Point(597, 474);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(95, 118);
@@ -153,7 +153,7 @@
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Location = new System.Drawing.Point(700, 544);
+            this.pictureBox9.Location = new System.Drawing.Point(700, 474);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(95, 118);
@@ -163,7 +163,7 @@
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Location = new System.Drawing.Point(803, 544);
+            this.pictureBox10.Location = new System.Drawing.Point(803, 474);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(95, 118);
@@ -190,7 +190,7 @@
             this.btnRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRut.ForeColor = System.Drawing.Color.White;
             this.btnRut.Image = global::BlackJack.Properties.Resources.rut1;
-            this.btnRut.Location = new System.Drawing.Point(1017, 359);
+            this.btnRut.Location = new System.Drawing.Point(920, 359);
             this.btnRut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnRut.Name = "btnRut";
             this.btnRut.Size = new System.Drawing.Size(204, 81);
@@ -205,7 +205,7 @@
             this.btnDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDan.ForeColor = System.Drawing.Color.White;
             this.btnDan.Image = global::BlackJack.Properties.Resources.DAN;
-            this.btnDan.Location = new System.Drawing.Point(1017, 441);
+            this.btnDan.Location = new System.Drawing.Point(920, 474);
             this.btnDan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnDan.Name = "btnDan";
             this.btnDan.Size = new System.Drawing.Size(204, 81);
@@ -219,6 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.Properties.Resources.BackGround_Table_1x;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1296, 677);
             this.Controls.Add(this.btnDan);
             this.Controls.Add(this.btnRut);
