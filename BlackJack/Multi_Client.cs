@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace BlackJack
             InitializeComponent();
             Connect();
         }
-          
+
 
         private void btnSend_Click(object sender, EventArgs e)
         {
@@ -35,12 +36,10 @@ namespace BlackJack
         //kết nối
 
         Player user;
-        
+
         IPEndPoint IP;
         Socket client;
-        bool isChat = false;
-        int tempPlayer;
-        void Connect()  
+        void Connect()
         {
             user = new Player();
             user.setLoaiNguoi(1);
@@ -48,7 +47,7 @@ namespace BlackJack
             IP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
             client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
             client.Connect(IP);
-            
+
 
 
             try
@@ -61,7 +60,7 @@ namespace BlackJack
             }
 
             Thread listen = new Thread(Receive);
-            
+
             listen.IsBackground = true;
             listen.Start();
         }
@@ -78,10 +77,10 @@ namespace BlackJack
                     MessageBox.Show("vui lòng nhập tên");
                     return;
                 }
-                string temp = ("01:"+txtName.Text + ": " + txtMess.Text).ToString();
+                string temp = ("01:" + txtName.Text + ": " + txtMess.Text).ToString();
                 client.Send(Serialize(temp));
             }
-            else if(txtMess.Visible==false)
+            else if (txtMess.Visible == false)
             {
                 string temp = "00:";
                 client.Send(Serialize(temp));
@@ -93,7 +92,7 @@ namespace BlackJack
             {
                 try
                 {
-                   
+
                     byte[] data = new byte[1024 * 5000];
                     client.Receive(data);
 
@@ -130,6 +129,7 @@ namespace BlackJack
                     //20: Truy xuất SQL Server
                     switch (message.Substring(0, 3))
                     {
+                        //start game
                         case "00:":
                             {
                                 this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
@@ -155,9 +155,9 @@ namespace BlackJack
                             {
                                 this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
                                 {
-                                    waitingLoading.Visible=true;
+                                    waitingLoading.Visible = true;
                                 });
-                               
+
                                 break;
                             }
                         case "03:":
@@ -173,7 +173,7 @@ namespace BlackJack
                                 });
                                 break;
                             }
-                        
+
                         case "94:":
                             {
                                 Card card = new Card();
@@ -187,31 +187,7 @@ namespace BlackJack
                                     label4.Text = (user.getSum()).ToString();
                                     waitingLoading.Visible = true;
                                 });
-                               
-                                break;
-                            }
-                        case "98:":
-                            {
-                                if (txtPlayer1.Text == message.Substring(3))
-                                    this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
-                                    {
-                                        pBc1.Visible = true;
-                                    });
-                                else if (txtPlayer2.Text == message.Substring(3))
-                                    this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
-                                    {
-                                        pBc2.Visible = true;
-                                    });
-                                else if (txtPlayer3.Text == message.Substring(3))
-                                    this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
-                                    {
-                                        pBc3.Visible = true;
-                                    });
-                                else if (txtPlayer4.Text == message.Substring(3))
-                                    this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
-                                    {
-                                        pBc4.Visible = true;
-                                    });
+
                                 break;
                             }
                         case "04:":
@@ -225,10 +201,10 @@ namespace BlackJack
                                 this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
                                 {
                                     label4.Text = (user.getSum()).ToString();
-                                    if (Int32.Parse(label4.Text.Trim()) >= 16 || user.getNumberCard()==5)
+                                    if (Int32.Parse(label4.Text.Trim()) >= 16 || user.getNumberCard() == 5)
                                         btnDan.Visible = true;
                                 });
-                                
+
                                 break;
                             }
                         case "09:":
@@ -245,7 +221,7 @@ namespace BlackJack
                             }
                         case "20:":
                             {
-                                int temp = Int32.Parse(message.Substring(3,1));
+                                int temp = Int32.Parse(message.Substring(3, 1));
                                 string temp2 = message.Substring(4);
                                 this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
                                 {
@@ -290,10 +266,11 @@ namespace BlackJack
                         case "21:":
                             {
                                 string temp = message.Substring(3);
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     if (temp != null)
                                     {
-                                        if (temp.Substring(0,15) == txtPlayer1.Text)
+                                        if (temp.Substring(0, 15) == txtPlayer1.Text)
                                         {
                                             if (Int32.Parse(temp.Substring(15, 1)) >= 3)
                                                 pbplayer13.Visible = true;
@@ -330,7 +307,7 @@ namespace BlackJack
                                                 pbplayer45.Visible = true;
                                         }
                                     }
-                                    if (temp.Substring(16)!="")
+                                    if (temp.Substring(16) != "")
                                     {
                                         temp = temp.Substring(16);
                                         if (temp.Substring(0, 15) == txtPlayer1.Text)
@@ -451,12 +428,13 @@ namespace BlackJack
                                         }
                                     }
                                 });
-                                
+
                                 break;
                             }
                         case "30:":
                             {
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     btnRut.Visible = true;
                                     label4.Visible = true;
                                     waitingLoading.Visible = false;
@@ -469,12 +447,13 @@ namespace BlackJack
                                     if (txtPlayer4.Text != "")
                                         ckplayer4.Visible = true;
                                 });
-                                    break;
+                                break;
                             }
                         case "31:":
                             {
                                 string temp = message.Substring(3);
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     waitingLoading.Visible = false;
                                     ketQua.Visible = true;
                                     if (temp == "01")
@@ -491,7 +470,7 @@ namespace BlackJack
                                     }
                                 });
                                 temp = user.getAllCard();
-                                client.Send(Serialize("36:"+temp));
+                                client.Send(Serialize("36:" + temp));
                                 break;
                             }
                         case "36:":
@@ -518,7 +497,7 @@ namespace BlackJack
                             {
                                 string temp = user.getAllCard();
                                 Thread.Sleep(50);
-                                client.Send(Serialize("41:"+ temp));
+                                client.Send(Serialize("41:" + temp));
                                 break;
                             }
                         case "42:":
@@ -532,7 +511,7 @@ namespace BlackJack
                             {
                                 string temp = user.getAllCard();
                                 Thread.Sleep(50);
-                                client.Send(Serialize("43:" + temp)) ;
+                                client.Send(Serialize("43:" + temp));
                                 break;
                             }
                         case "44:":
@@ -544,7 +523,7 @@ namespace BlackJack
                             }
                         case "51:":
                             {
-                                
+
                                 string temp = message.Substring(3);
                                 Card cards = new Card();
                                 int i = 1;
@@ -704,7 +683,8 @@ namespace BlackJack
                         case "61:":
                             {
                                 string temp = message.Substring(3);
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     ckplayer1.Visible = false;
                                     ketQuaPlayer1.Visible = true;
                                     if (temp == "01")
@@ -720,12 +700,13 @@ namespace BlackJack
                                         ketQuaPlayer1.Text = "Thua";
                                     }
                                 });
-                                
+
                                 break;
                             }
                         case "62:":
                             {
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     ckplayer2.Visible = false;
                                     ketQuaPlayer2.Visible = true;
                                     if (message.Substring(3) == "01")
@@ -745,7 +726,8 @@ namespace BlackJack
                             }
                         case "63:":
                             {
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     ckplayer3.Visible = false;
                                     ketQuaPlayer3.Visible = true;
                                     if (message.Substring(3) == "01")
@@ -765,7 +747,8 @@ namespace BlackJack
                             }
                         case "64:":
                             {
-                                this.Invoke((MethodInvoker)delegate {
+                                this.Invoke((MethodInvoker)delegate
+                                {
                                     ckplayer4.Visible = false;
                                     ketQuaPlayer4.Visible = true;
                                     if (message.Substring(3) == "01")
@@ -799,7 +782,7 @@ namespace BlackJack
             listMess.Text += (s + "\n").ToString();
             txtMess.Clear();
         }
-        byte[] Serialize(   object obj)
+        byte[] Serialize(object obj)
         {
             MemoryStream stream = new MemoryStream();
             BinaryFormatter formatter = new BinaryFormatter();
@@ -1347,7 +1330,7 @@ namespace BlackJack
             {
                 if (user.getNumberCard() == 4)
                 {
-                        btnRut.Visible = false;
+                    btnRut.Visible = false;
                 }
             });
         }
@@ -1362,14 +1345,14 @@ namespace BlackJack
                 btnRut.Visible = false;
                 btnDan.Visible = false;
             });
-           
+
         }
 
         private void ckplayer1_Click(object sender, EventArgs e)
         {
 
-            string text =  user.getAllCard();
-            client.Send(Serialize("35:"+text));
+            string text = user.getAllCard();
+            client.Send(Serialize("35:" + text));
             text = txtPlayer1.Text;
             client.Send(Serialize("31:" + text));
         }
@@ -1398,17 +1381,12 @@ namespace BlackJack
             client.Send(Serialize("34:" + text));
         }
 
-        private void waitingLoading_Click(object sender, EventArgs e)
+        private void player4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Multi_Client_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ketQua_Click(object sender, EventArgs e)
+        private void pBc1_Click(object sender, EventArgs e)
         {
 
         }

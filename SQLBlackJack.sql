@@ -10,23 +10,19 @@ CREATE TABLE CLIENT(
 	CONSTRAINT PK_KH PRIMARY KEY(ID)
 )
 
-SELECT * FROM CLIENT 
-insert into CLIENT (ID, IP) VALUES(1, '192.168.0.108')
-update CLIENT SET NUMOFCARD=2 WHERE IP='192.168.0.108'
-update CLIENT SET SUMCARD=2 WHERE IP='192.168.0.108'
---DROP TABLE CLIENT
-SELECT COUNT(IP) FROM CLIENT
+create table account
+(
+	accnt varchar(50),
+	passwd varchar(50)
+)
 
-delete from Client
+insert into account values ('acc1', '1')
+insert into account values ('acc2', '2')
+insert into account values ('acc3', '3')
+insert into account values ('acc4', '4')
+insert into account values ('acc5', '5')
 
-insert into CLIENT (ID, IP) VALUES(1, '127.0.0.1:62630')
+select * from account
+select passwd from account where accnt = 'accsfds1' and passwd = '1'
 
-select top 1 IP from CLIENT order by IP desc;			--select hang cuoi
-
-SELECT NUMOFCARD FROM Client WHERE IP='127.0.0.1:60618'
-SELECT SUMCARD FROM Client WHERE IP='127.0.0.1:60618'
-
-ALTER TABLE CLIENT ADD DAN INT
-
-
-SELECT COUNT(*) FROM Client WHERE DAN=1
+drop table Account

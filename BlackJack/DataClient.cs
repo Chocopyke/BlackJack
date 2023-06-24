@@ -28,14 +28,7 @@ namespace BlackJack
             datatClient.DataSource = table;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var dap = new SqlDataAdapter(textBox1.Text.Trim(), conn);
-            var table = new DataTable();
-            dap.Fill(table);
-            datatClient.DataSource = table;
-        }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             var dap = new SqlDataAdapter("SELECT * FROM CLIENT", conn);
@@ -44,13 +37,9 @@ namespace BlackJack
             datatClient.DataSource = table;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void datatClient_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var dap = new SqlDataAdapter(textBox2.Text, conn);
-            var table = new DataTable();
-            dap.Fill(table);
 
-            textBox3.Text = table.Rows[0][0].ToString();
         }
     }
 }

@@ -36,6 +36,7 @@ namespace BlackJack
             dataClient.Show();
             Control.CheckForIllegalCrossThreadCalls = false;
             boBai = new BoBai();
+
             Connect();
         }
         
@@ -66,7 +67,7 @@ namespace BlackJack
                         if (clientList.Count() == 5)
                         {
                             AddMessage("Đã đạt số client tối đa".ToString());
-                            return;
+                            //return;
                         }
 
                         server.Listen(100);
@@ -87,7 +88,7 @@ namespace BlackJack
                         string stringSql = "("+(Int32.Parse(table.Rows[0][0].ToString()) + 1).ToString()+", '"+IP+ "')";
 
                         dap = new SqlDataAdapter("insert into CLIENT (ID, IP) VALUES"+stringSql, conn);
-                        table = new DataTable();
+                        //table = new DataTable();
                         dap.Fill(table);
                         AddMessage(IP);
                         AddMessage("insert into CLIENT (ID, IP) VALUES" + stringSql);
