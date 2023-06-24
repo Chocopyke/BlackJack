@@ -47,7 +47,7 @@
             this.btnSinglePlayer.Primary = true;
             this.btnSinglePlayer.Size = new System.Drawing.Size(265, 48);
             this.btnSinglePlayer.TabIndex = 0;
-            this.btnSinglePlayer.Text = "PLAY SINGLE ";
+            this.btnSinglePlayer.Text = "singleplay";
             this.btnSinglePlayer.UseVisualStyleBackColor = true;
             this.btnSinglePlayer.Click += new System.EventHandler(this.btnSinglePlayer_Click);
             // 
@@ -66,7 +66,7 @@
             this.materialRaisedButton2.Primary = true;
             this.materialRaisedButton2.Size = new System.Drawing.Size(265, 48);
             this.materialRaisedButton2.TabIndex = 1;
-            this.materialRaisedButton2.Text = "MUTIPLAYER";
+            this.materialRaisedButton2.Text = "Multiplay";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
             this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
@@ -75,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.Properties.Resources.FormMain_1x;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1296, 677);
             this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.btnSinglePlayer);
