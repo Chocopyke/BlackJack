@@ -75,19 +75,19 @@ namespace BlackJack
                         clientList.Add(client);
 
                         Thread receive = new Thread(Receive);
-                        
+
                         receive.IsBackground = true;
                         receive.Start(client);
 
-                        
+
                         var dap = new SqlDataAdapter("SELECT COUNT(IP) FROM CLIENT", conn);
                         var table = new DataTable();
                         dap.Fill(table);
                         string IP = client.RemoteEndPoint.ToString();   //Hiển thị ip client
                         ipclient = IP;
-                        string stringSql = "("+(Int32.Parse(table.Rows[0][0].ToString()) + 1).ToString()+", '"+IP+ "')";
+                        string stringSql = "(" + (Int32.Parse(table.Rows[0][0].ToString()) + 1).ToString() + ", '" + IP + "')";
 
-                        dap = new SqlDataAdapter("insert into CLIENT (ID, IP) VALUES"+stringSql, conn);
+                        dap = new SqlDataAdapter($"insert into CLIENT (ID, IP) VALUES {stringSql}", conn);
                         //table = new DataTable();
                         dap.Fill(table);
                         AddMessage(IP);

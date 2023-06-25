@@ -23,6 +23,5 @@ insert into account values ('acc4', '4')
 insert into account values ('acc5', '5')
 
 select * from account
-select passwd from account where accnt = 'accsfds1' and passwd = '1'
 
-drop table Account
+drop table client
