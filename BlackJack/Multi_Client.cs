@@ -131,7 +131,7 @@ namespace BlackJack
                         //start game
                         case "00:":
                             {
-                                this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
+                                this.BeginInvoke((MethodInvoker)delegate          
                                 {
                                     waitingLoading.Visible = false;
                                     listMess.Visible = true;
@@ -150,9 +150,9 @@ namespace BlackJack
                                 AddMessage(message.Substring(3));
                                 break;
                             }
-                        case "02:":   //2: wait
+                        case "02:":
                             {
-                                this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
+                                this.BeginInvoke((MethodInvoker)delegate         
                                 {
                                     waitingLoading.Visible = true;
                                 });
