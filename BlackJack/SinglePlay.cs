@@ -359,5 +359,10 @@ namespace BlackJack
         {
 
         }
+
+        private void SinglePlay_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+        }
     }
 }

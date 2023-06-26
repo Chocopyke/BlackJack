@@ -41,5 +41,10 @@ namespace BlackJack
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
         }
+
+        private void MainMutiplayer_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+        }
     }
 }

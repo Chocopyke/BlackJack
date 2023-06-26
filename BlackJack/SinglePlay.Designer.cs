@@ -57,13 +57,12 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("SVN-A Love Of Thunder", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = global::BlackJack.Properties.Resources.BANGDIEM;
-            this.label2.Location = new System.Drawing.Point(948, 544);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(711, 442);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 111);
+            this.label2.Size = new System.Drawing.Size(122, 90);
             this.label2.TabIndex = 3;
             this.label2.Text = "0";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,100 +72,90 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(392, 154);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(294, 125);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 96);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(495, 154);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(371, 125);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox2.Size = new System.Drawing.Size(71, 96);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(597, 154);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(448, 125);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox3.Size = new System.Drawing.Size(71, 96);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Location = new System.Drawing.Point(700, 154);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(525, 125);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox4.Size = new System.Drawing.Size(71, 96);
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Location = new System.Drawing.Point(803, 154);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Location = new System.Drawing.Point(602, 125);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox5.Size = new System.Drawing.Size(71, 96);
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(392, 474);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Location = new System.Drawing.Point(294, 385);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox6.Size = new System.Drawing.Size(71, 96);
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Location = new System.Drawing.Point(494, 474);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Location = new System.Drawing.Point(370, 385);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox7.Size = new System.Drawing.Size(71, 96);
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Location = new System.Drawing.Point(597, 474);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Location = new System.Drawing.Point(448, 385);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox8.Size = new System.Drawing.Size(71, 96);
             this.pictureBox8.TabIndex = 11;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Location = new System.Drawing.Point(700, 474);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox9.Location = new System.Drawing.Point(525, 385);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox9.Size = new System.Drawing.Size(71, 96);
             this.pictureBox9.TabIndex = 10;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Location = new System.Drawing.Point(803, 474);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox10.Location = new System.Drawing.Point(602, 385);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(95, 118);
+            this.pictureBox10.Size = new System.Drawing.Size(71, 96);
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
             // 
@@ -176,10 +165,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Image = global::BlackJack.Properties.Resources.Asset_2;
-            this.label3.Location = new System.Drawing.Point(503, 359);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(377, 292);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(292, 81);
+            this.label3.Size = new System.Drawing.Size(219, 66);
             this.label3.TabIndex = 14;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -190,10 +178,9 @@
             this.btnRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRut.ForeColor = System.Drawing.Color.White;
             this.btnRut.Image = global::BlackJack.Properties.Resources.rut1;
-            this.btnRut.Location = new System.Drawing.Point(920, 359);
-            this.btnRut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnRut.Location = new System.Drawing.Point(690, 292);
             this.btnRut.Name = "btnRut";
-            this.btnRut.Size = new System.Drawing.Size(204, 81);
+            this.btnRut.Size = new System.Drawing.Size(153, 66);
             this.btnRut.TabIndex = 25;
             this.btnRut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRut.Visible = false;
@@ -205,10 +192,9 @@
             this.btnDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDan.ForeColor = System.Drawing.Color.White;
             this.btnDan.Image = global::BlackJack.Properties.Resources.DAN;
-            this.btnDan.Location = new System.Drawing.Point(920, 474);
-            this.btnDan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnDan.Location = new System.Drawing.Point(690, 385);
             this.btnDan.Name = "btnDan";
-            this.btnDan.Size = new System.Drawing.Size(204, 81);
+            this.btnDan.Size = new System.Drawing.Size(153, 66);
             this.btnDan.TabIndex = 26;
             this.btnDan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDan.Visible = false;
@@ -216,11 +202,11 @@
             // 
             // SinglePlay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.Properties.Resources.BackGround_Table_1x;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1296, 677);
+            this.ClientSize = new System.Drawing.Size(972, 550);
             this.Controls.Add(this.btnDan);
             this.Controls.Add(this.btnRut);
             this.Controls.Add(this.label3);
@@ -235,10 +221,11 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SinglePlay";
             this.Text = "SinglePlay";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SinglePlay_FormClosed);
+            this.Load += new System.EventHandler(this.SinglePlay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

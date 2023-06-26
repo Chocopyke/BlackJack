@@ -45,6 +45,7 @@ namespace BlackJack
         private void Muti_Server_Load(object sender, EventArgs e)
         {
             conn.Open();
+            this.MaximizeBox = false;
         } 
 
         

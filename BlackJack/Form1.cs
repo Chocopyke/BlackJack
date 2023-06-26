@@ -46,5 +46,11 @@ namespace BlackJack
             this.Hide();
             mainMutiplayer.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+            this.WindowState = FormWindowState.Normal;
+        }
     }
 }

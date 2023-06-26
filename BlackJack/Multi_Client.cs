@@ -1390,5 +1390,10 @@ namespace BlackJack
         {
 
         }
+
+        private void Multi_Client_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+        }
     }
 }

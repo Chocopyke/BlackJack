@@ -21,6 +21,7 @@ namespace BlackJack
 
         private void DataClient_Load(object sender, EventArgs e)
         {
+            this.MaximizeBox = false;
             conn.Open();
             var dap = new SqlDataAdapter("SELECT * FROM CLIENT", conn);
             var table = new DataTable();
