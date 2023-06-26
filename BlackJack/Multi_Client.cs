@@ -33,8 +33,7 @@ namespace BlackJack
                 return;
             }
         }
-        //kết nối
-
+        
         Player user;
 
         IPEndPoint IP;
