@@ -37,5 +37,15 @@ namespace BlackJack
             }
             else MessageBox.Show("Dang nhap sai! Vui long kiem tra lai tai khoan va mat khau!");
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

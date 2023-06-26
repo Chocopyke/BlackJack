@@ -354,5 +354,8 @@
   <ItemGroup>
     <None Include="Resources\Asset 8 - Copy.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-baccarat-game-blackjack-logo-telephone-poker-chips-game-text-logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

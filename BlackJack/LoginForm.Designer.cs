@@ -33,62 +33,98 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.playButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // accBox
             // 
-            this.accBox.Location = new System.Drawing.Point(350, 135);
+            this.accBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.accBox.Location = new System.Drawing.Point(119, 122);
+            this.accBox.Margin = new System.Windows.Forms.Padding(2);
             this.accBox.Name = "accBox";
-            this.accBox.Size = new System.Drawing.Size(100, 22);
+            this.accBox.Size = new System.Drawing.Size(132, 30);
             this.accBox.TabIndex = 0;
             // 
             // pasBox
             // 
-            this.pasBox.Location = new System.Drawing.Point(350, 218);
+            this.pasBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.pasBox.Location = new System.Drawing.Point(119, 164);
+            this.pasBox.Margin = new System.Windows.Forms.Padding(2);
             this.pasBox.Name = "pasBox";
-            this.pasBox.Size = new System.Drawing.Size(100, 22);
+            this.pasBox.Size = new System.Drawing.Size(132, 30);
             this.pasBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(234, 138);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label1.Location = new System.Drawing.Point(11, 125);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 16);
+            this.label1.Size = new System.Drawing.Size(91, 28);
             this.label1.TabIndex = 3;
             this.label1.Text = "Account:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(234, 221);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label2.Location = new System.Drawing.Point(11, 167);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.Size = new System.Drawing.Size(103, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
             // playButton
             // 
-            this.playButton.Location = new System.Drawing.Point(350, 271);
+            this.playButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.playButton.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.playButton.Location = new System.Drawing.Point(78, 216);
+            this.playButton.Margin = new System.Windows.Forms.Padding(2);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(75, 23);
+            this.playButton.Size = new System.Drawing.Size(114, 53);
             this.playButton.TabIndex = 5;
-            this.playButton.Text = "Play!";
-            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Text = "Login";
+            this.playButton.UseVisualStyleBackColor = false;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BlackJack.Properties.Resources.png_transparent_baccarat_game_blackjack_logo_telephone_poker_chips_game_text_logo;
+            this.pictureBox1.Image = global::BlackJack.Properties.Resources.png_transparent_baccarat_game_blackjack_logo_telephone_poker_chips_game_text_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 42);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::BlackJack.Properties.Resources.FormMain_1x;
+            this.ClientSize = new System.Drawing.Size(280, 302);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pasBox);
             this.Controls.Add(this.accBox);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +137,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
