@@ -21,14 +21,16 @@ namespace BlackJack
     {
         BoBai boBai;
         IPEndPoint IP;
+        Socket logform;
         Socket server;
         List<Socket> clientList;
         int tempSL = 0;
         int tempPlayer = 0;
         string ipclient;
+        int clientCount = 0;
         string tempCai = "";
 
-        SqlConnection conn = new SqlConnection("Server=.\\SQLEXPRESS;database=Client;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Server=.;database=Client;Integrated Security=True");
         public Muti_Server()
         {
             InitializeComponent();
@@ -153,6 +155,29 @@ namespace BlackJack
 
                     switch (message.Substring(0, 3))
                     {
+                        case "99:":
+                            {
+                                string acc = message.Substring(3, 4);
+                                string pas = message.Substring(6, 1);
+                                SqlDataAdapter tmp = new SqlDataAdapter($"select passwd from account where accnt = '{acc}'", conn);
+                                DataTable dt = new DataTable();
+                                tmp.Fill(dt);
+
+                                if (dt.Rows.Count > 0)
+                                {
+                                    if (pas == dt.Rows[0][0].ToString())
+                                    {
+                                        clientList[0].Send(Serialize("true"));
+                                    }
+                                }
+                                else
+                                {
+                                    clientList[0].Send(Serialize("false"));
+                                }
+
+                                break;
+                            }
+
                         case "00:":
                             {
                                 tempSL++;
