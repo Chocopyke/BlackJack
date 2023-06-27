@@ -40,19 +40,19 @@
             // accBox
             // 
             this.accBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.accBox.Location = new System.Drawing.Point(119, 122);
-            this.accBox.Margin = new System.Windows.Forms.Padding(2);
+            this.accBox.Location = new System.Drawing.Point(159, 150);
+            this.accBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.accBox.Name = "accBox";
-            this.accBox.Size = new System.Drawing.Size(132, 30);
+            this.accBox.Size = new System.Drawing.Size(175, 36);
             this.accBox.TabIndex = 0;
             // 
             // pasBox
             // 
             this.pasBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.pasBox.Location = new System.Drawing.Point(119, 164);
-            this.pasBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pasBox.Location = new System.Drawing.Point(159, 202);
+            this.pasBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pasBox.Name = "pasBox";
-            this.pasBox.Size = new System.Drawing.Size(132, 30);
+            this.pasBox.Size = new System.Drawing.Size(175, 36);
             this.pasBox.TabIndex = 1;
             // 
             // label1
@@ -61,10 +61,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label1.Location = new System.Drawing.Point(11, 125);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 28);
+            this.label1.Size = new System.Drawing.Size(116, 35);
             this.label1.TabIndex = 3;
             this.label1.Text = "Account:";
             // 
@@ -74,10 +73,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label2.Location = new System.Drawing.Point(11, 167);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(15, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 28);
+            this.label2.Size = new System.Drawing.Size(128, 35);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
@@ -86,10 +84,10 @@
             this.playButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.playButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.playButton.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.playButton.Location = new System.Drawing.Point(78, 216);
-            this.playButton.Margin = new System.Windows.Forms.Padding(2);
+            this.playButton.Location = new System.Drawing.Point(104, 266);
+            this.playButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(114, 53);
+            this.playButton.Size = new System.Drawing.Size(152, 65);
             this.playButton.TabIndex = 5;
             this.playButton.Text = "Login";
             this.playButton.UseVisualStyleBackColor = false;
@@ -100,9 +98,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::BlackJack.Properties.Resources.png_transparent_baccarat_game_blackjack_logo_telephone_poker_chips_game_text_logo;
             this.pictureBox1.Image = global::BlackJack.Properties.Resources.png_transparent_baccarat_game_blackjack_logo_telephone_poker_chips_game_text_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(123, 52);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -110,17 +109,17 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.Properties.Resources.FormMain_1x;
-            this.ClientSize = new System.Drawing.Size(280, 302);
+            this.ClientSize = new System.Drawing.Size(373, 372);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pasBox);
             this.Controls.Add(this.accBox);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);

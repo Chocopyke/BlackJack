@@ -17,7 +17,7 @@ namespace BlackJack
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection("Server=.\\SQLEXPRESS;database=Client;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Server=.;database=Client;Integrated Security=True");
 
         private void DataClient_Load(object sender, EventArgs e)
         {
