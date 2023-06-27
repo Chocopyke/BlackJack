@@ -82,6 +82,7 @@
             this.ketQuaPlayer3 = new System.Windows.Forms.Label();
             this.ketQuaPlayer4 = new System.Windows.Forms.Label();
             this.ketQua = new System.Windows.Forms.Label();
+            this.startMultiplay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -116,9 +117,10 @@
             // btnSend
             // 
             this.btnSend.ForeColor = System.Drawing.Color.Black;
-            this.btnSend.Location = new System.Drawing.Point(161, 549);
+            this.btnSend.Location = new System.Drawing.Point(215, 676);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(47, 23);
+            this.btnSend.Size = new System.Drawing.Size(63, 28);
             this.btnSend.TabIndex = 11;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -130,9 +132,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 533);
+            this.label2.Location = new System.Drawing.Point(16, 656);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(64, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Message";
             this.label2.Visible = false;
@@ -142,27 +145,30 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 494);
+            this.label1.Location = new System.Drawing.Point(16, 608);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Your name";
             this.label1.Visible = false;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(15, 510);
+            this.txtName.Location = new System.Drawing.Point(20, 628);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(72, 20);
+            this.txtName.Size = new System.Drawing.Size(95, 22);
             this.txtName.TabIndex = 8;
             this.txtName.Visible = false;
             // 
             // txtMess
             // 
-            this.txtMess.Location = new System.Drawing.Point(15, 549);
+            this.txtMess.Location = new System.Drawing.Point(20, 676);
+            this.txtMess.Margin = new System.Windows.Forms.Padding(4);
             this.txtMess.Multiline = true;
             this.txtMess.Name = "txtMess";
-            this.txtMess.Size = new System.Drawing.Size(140, 20);
+            this.txtMess.Size = new System.Drawing.Size(185, 24);
             this.txtMess.TabIndex = 7;
             this.txtMess.Visible = false;
             // 
@@ -172,9 +178,10 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Image = global::BlackJack.Properties.Resources.Asset_2;
-            this.label3.Location = new System.Drawing.Point(386, 299);
+            this.label3.Location = new System.Drawing.Point(515, 368);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(219, 66);
+            this.label3.Size = new System.Drawing.Size(292, 81);
             this.label3.TabIndex = 15;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -183,9 +190,10 @@
             // 
             this.waitingLoading.BackColor = System.Drawing.Color.Transparent;
             this.waitingLoading.Image = global::BlackJack.Properties.Resources.giphy;
-            this.waitingLoading.Location = new System.Drawing.Point(342, 90);
+            this.waitingLoading.Location = new System.Drawing.Point(456, 111);
+            this.waitingLoading.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.waitingLoading.Name = "waitingLoading";
-            this.waitingLoading.Size = new System.Drawing.Size(313, 204);
+            this.waitingLoading.Size = new System.Drawing.Size(417, 251);
             this.waitingLoading.TabIndex = 16;
             this.waitingLoading.Visible = false;
             // 
@@ -195,9 +203,10 @@
             this.btnDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDan.ForeColor = System.Drawing.Color.White;
             this.btnDan.Image = global::BlackJack.Properties.Resources.DAN;
-            this.btnDan.Location = new System.Drawing.Point(800, 503);
+            this.btnDan.Location = new System.Drawing.Point(1067, 619);
+            this.btnDan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnDan.Name = "btnDan";
-            this.btnDan.Size = new System.Drawing.Size(127, 66);
+            this.btnDan.Size = new System.Drawing.Size(169, 81);
             this.btnDan.TabIndex = 49;
             this.btnDan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDan.Visible = false;
@@ -209,9 +218,10 @@
             this.btnRut.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRut.ForeColor = System.Drawing.Color.White;
             this.btnRut.Image = global::BlackJack.Properties.Resources.rut1;
-            this.btnRut.Location = new System.Drawing.Point(787, 437);
+            this.btnRut.Location = new System.Drawing.Point(1049, 538);
+            this.btnRut.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnRut.Name = "btnRut";
-            this.btnRut.Size = new System.Drawing.Size(153, 66);
+            this.btnRut.Size = new System.Drawing.Size(204, 81);
             this.btnRut.TabIndex = 48;
             this.btnRut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRut.Visible = false;
@@ -220,45 +230,50 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(288, 456);
+            this.pictureBox6.Location = new System.Drawing.Point(384, 561);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(71, 96);
+            this.pictureBox6.Size = new System.Drawing.Size(95, 118);
             this.pictureBox6.TabIndex = 37;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Location = new System.Drawing.Point(365, 456);
+            this.pictureBox7.Location = new System.Drawing.Point(487, 561);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(71, 96);
+            this.pictureBox7.Size = new System.Drawing.Size(95, 118);
             this.pictureBox7.TabIndex = 36;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Location = new System.Drawing.Point(442, 456);
+            this.pictureBox8.Location = new System.Drawing.Point(589, 561);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(71, 96);
+            this.pictureBox8.Size = new System.Drawing.Size(95, 118);
             this.pictureBox8.TabIndex = 35;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Location = new System.Drawing.Point(519, 456);
+            this.pictureBox9.Location = new System.Drawing.Point(692, 561);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(71, 96);
+            this.pictureBox9.Size = new System.Drawing.Size(95, 118);
             this.pictureBox9.TabIndex = 34;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Location = new System.Drawing.Point(596, 456);
+            this.pictureBox10.Location = new System.Drawing.Point(795, 561);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(71, 96);
+            this.pictureBox10.Size = new System.Drawing.Size(95, 118);
             this.pictureBox10.TabIndex = 33;
             this.pictureBox10.TabStop = false;
             // 
@@ -268,9 +283,10 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Image = global::BlackJack.Properties.Resources.BANGDIEM;
-            this.label4.Location = new System.Drawing.Point(674, 424);
+            this.label4.Location = new System.Drawing.Point(899, 522);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 128);
+            this.label4.Size = new System.Drawing.Size(173, 158);
             this.label4.TabIndex = 27;
             this.label4.Text = "0";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -280,9 +296,10 @@
             // 
             this.player1.BackColor = System.Drawing.Color.Transparent;
             this.player1.Image = global::BlackJack.Properties.Resources._1;
-            this.player1.Location = new System.Drawing.Point(5, 272);
+            this.player1.Location = new System.Drawing.Point(7, 335);
+            this.player1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.player1.Name = "player1";
-            this.player1.Size = new System.Drawing.Size(158, 59);
+            this.player1.Size = new System.Drawing.Size(211, 73);
             this.player1.TabIndex = 50;
             this.player1.Visible = false;
             // 
@@ -290,9 +307,10 @@
             // 
             this.player2.BackColor = System.Drawing.Color.Transparent;
             this.player2.Image = global::BlackJack.Properties.Resources._2;
-            this.player2.Location = new System.Drawing.Point(8, 7);
+            this.player2.Location = new System.Drawing.Point(11, 9);
+            this.player2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.player2.Name = "player2";
-            this.player2.Size = new System.Drawing.Size(158, 59);
+            this.player2.Size = new System.Drawing.Size(211, 73);
             this.player2.TabIndex = 51;
             this.player2.Visible = false;
             // 
@@ -300,9 +318,10 @@
             // 
             this.player3.BackColor = System.Drawing.Color.Transparent;
             this.player3.Image = global::BlackJack.Properties.Resources._3;
-            this.player3.Location = new System.Drawing.Point(808, 7);
+            this.player3.Location = new System.Drawing.Point(1077, 9);
+            this.player3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.player3.Name = "player3";
-            this.player3.Size = new System.Drawing.Size(149, 59);
+            this.player3.Size = new System.Drawing.Size(199, 73);
             this.player3.TabIndex = 52;
             this.player3.Visible = false;
             // 
@@ -310,18 +329,20 @@
             // 
             this.player4.BackColor = System.Drawing.Color.Transparent;
             this.player4.Image = global::BlackJack.Properties.Resources._4;
-            this.player4.Location = new System.Drawing.Point(802, 272);
+            this.player4.Location = new System.Drawing.Point(1069, 335);
+            this.player4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.player4.Name = "player4";
-            this.player4.Size = new System.Drawing.Size(158, 59);
+            this.player4.Size = new System.Drawing.Size(211, 73);
             this.player4.TabIndex = 53;
             this.player4.Visible = false;
             this.player4.Click += new System.EventHandler(this.player4_Click);
             // 
             // listMess
             // 
-            this.listMess.Location = new System.Drawing.Point(16, 435);
+            this.listMess.Location = new System.Drawing.Point(21, 535);
+            this.listMess.Margin = new System.Windows.Forms.Padding(4);
             this.listMess.Name = "listMess";
-            this.listMess.Size = new System.Drawing.Size(192, 56);
+            this.listMess.Size = new System.Drawing.Size(255, 68);
             this.listMess.TabIndex = 55;
             this.listMess.Text = "";
             this.listMess.Visible = false;
@@ -332,9 +353,10 @@
             this.txtPlayer1.BackColor = System.Drawing.Color.Transparent;
             this.txtPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayer1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtPlayer1.Location = new System.Drawing.Point(16, 251);
+            this.txtPlayer1.Location = new System.Drawing.Point(21, 309);
+            this.txtPlayer1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPlayer1.Name = "txtPlayer1";
-            this.txtPlayer1.Size = new System.Drawing.Size(0, 16);
+            this.txtPlayer1.Size = new System.Drawing.Size(0, 20);
             this.txtPlayer1.TabIndex = 56;
             this.txtPlayer1.Visible = false;
             // 
@@ -344,9 +366,10 @@
             this.txtPlayer2.BackColor = System.Drawing.Color.Transparent;
             this.txtPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayer2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtPlayer2.Location = new System.Drawing.Point(75, 137);
+            this.txtPlayer2.Location = new System.Drawing.Point(100, 169);
+            this.txtPlayer2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPlayer2.Name = "txtPlayer2";
-            this.txtPlayer2.Size = new System.Drawing.Size(0, 16);
+            this.txtPlayer2.Size = new System.Drawing.Size(0, 20);
             this.txtPlayer2.TabIndex = 60;
             this.txtPlayer2.Visible = false;
             // 
@@ -356,9 +379,10 @@
             this.txtPlayer3.BackColor = System.Drawing.Color.Transparent;
             this.txtPlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayer3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtPlayer3.Location = new System.Drawing.Point(693, 137);
+            this.txtPlayer3.Location = new System.Drawing.Point(924, 169);
+            this.txtPlayer3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPlayer3.Name = "txtPlayer3";
-            this.txtPlayer3.Size = new System.Drawing.Size(0, 16);
+            this.txtPlayer3.Size = new System.Drawing.Size(0, 20);
             this.txtPlayer3.TabIndex = 61;
             this.txtPlayer3.Visible = false;
             // 
@@ -368,9 +392,10 @@
             this.txtPlayer4.BackColor = System.Drawing.Color.Transparent;
             this.txtPlayer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayer4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtPlayer4.Location = new System.Drawing.Point(868, 157);
+            this.txtPlayer4.Location = new System.Drawing.Point(1157, 193);
+            this.txtPlayer4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPlayer4.Name = "txtPlayer4";
-            this.txtPlayer4.Size = new System.Drawing.Size(0, 16);
+            this.txtPlayer4.Size = new System.Drawing.Size(0, 20);
             this.txtPlayer4.TabIndex = 62;
             this.txtPlayer4.Visible = false;
             // 
@@ -378,9 +403,10 @@
             // 
             this.pbplayer11.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer11.Location = new System.Drawing.Point(8, 215);
+            this.pbplayer11.Location = new System.Drawing.Point(11, 265);
+            this.pbplayer11.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer11.Name = "pbplayer11";
-            this.pbplayer11.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer11.Size = new System.Drawing.Size(35, 44);
             this.pbplayer11.TabIndex = 63;
             this.pbplayer11.TabStop = false;
             this.pbplayer11.Visible = false;
@@ -389,9 +415,10 @@
             // 
             this.pbplayer12.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer12.Location = new System.Drawing.Point(40, 215);
+            this.pbplayer12.Location = new System.Drawing.Point(53, 265);
+            this.pbplayer12.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer12.Name = "pbplayer12";
-            this.pbplayer12.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer12.Size = new System.Drawing.Size(35, 44);
             this.pbplayer12.TabIndex = 64;
             this.pbplayer12.TabStop = false;
             this.pbplayer12.Visible = false;
@@ -400,9 +427,10 @@
             // 
             this.pbplayer13.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer13.Location = new System.Drawing.Point(71, 215);
+            this.pbplayer13.Location = new System.Drawing.Point(95, 265);
+            this.pbplayer13.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer13.Name = "pbplayer13";
-            this.pbplayer13.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer13.Size = new System.Drawing.Size(35, 44);
             this.pbplayer13.TabIndex = 65;
             this.pbplayer13.TabStop = false;
             this.pbplayer13.Visible = false;
@@ -411,9 +439,10 @@
             // 
             this.pbplayer14.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer14.Location = new System.Drawing.Point(104, 215);
+            this.pbplayer14.Location = new System.Drawing.Point(139, 265);
+            this.pbplayer14.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer14.Name = "pbplayer14";
-            this.pbplayer14.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer14.Size = new System.Drawing.Size(35, 44);
             this.pbplayer14.TabIndex = 66;
             this.pbplayer14.TabStop = false;
             this.pbplayer14.Visible = false;
@@ -422,9 +451,10 @@
             // 
             this.pbplayer15.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer15.Location = new System.Drawing.Point(136, 215);
+            this.pbplayer15.Location = new System.Drawing.Point(181, 265);
+            this.pbplayer15.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer15.Name = "pbplayer15";
-            this.pbplayer15.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer15.Size = new System.Drawing.Size(35, 44);
             this.pbplayer15.TabIndex = 67;
             this.pbplayer15.TabStop = false;
             this.pbplayer15.Visible = false;
@@ -433,9 +463,10 @@
             // 
             this.pbplayer25.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer25.Location = new System.Drawing.Point(138, 78);
+            this.pbplayer25.Location = new System.Drawing.Point(184, 96);
+            this.pbplayer25.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer25.Name = "pbplayer25";
-            this.pbplayer25.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer25.Size = new System.Drawing.Size(35, 44);
             this.pbplayer25.TabIndex = 72;
             this.pbplayer25.TabStop = false;
             this.pbplayer25.Visible = false;
@@ -444,9 +475,10 @@
             // 
             this.pbplayer24.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer24.Location = new System.Drawing.Point(106, 78);
+            this.pbplayer24.Location = new System.Drawing.Point(141, 96);
+            this.pbplayer24.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer24.Name = "pbplayer24";
-            this.pbplayer24.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer24.Size = new System.Drawing.Size(35, 44);
             this.pbplayer24.TabIndex = 71;
             this.pbplayer24.TabStop = false;
             this.pbplayer24.Visible = false;
@@ -455,9 +487,10 @@
             // 
             this.pbplayer23.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer23.Location = new System.Drawing.Point(74, 78);
+            this.pbplayer23.Location = new System.Drawing.Point(99, 96);
+            this.pbplayer23.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer23.Name = "pbplayer23";
-            this.pbplayer23.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer23.Size = new System.Drawing.Size(35, 44);
             this.pbplayer23.TabIndex = 70;
             this.pbplayer23.TabStop = false;
             this.pbplayer23.Visible = false;
@@ -466,9 +499,10 @@
             // 
             this.pbplayer22.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer22.Location = new System.Drawing.Point(42, 78);
+            this.pbplayer22.Location = new System.Drawing.Point(56, 96);
+            this.pbplayer22.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer22.Name = "pbplayer22";
-            this.pbplayer22.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer22.Size = new System.Drawing.Size(35, 44);
             this.pbplayer22.TabIndex = 69;
             this.pbplayer22.TabStop = false;
             this.pbplayer22.Visible = false;
@@ -477,9 +511,10 @@
             // 
             this.pbplayer21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbplayer21.BackgroundImage")));
             this.pbplayer21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer21.Location = new System.Drawing.Point(10, 78);
+            this.pbplayer21.Location = new System.Drawing.Point(13, 96);
+            this.pbplayer21.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer21.Name = "pbplayer21";
-            this.pbplayer21.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer21.Size = new System.Drawing.Size(35, 44);
             this.pbplayer21.TabIndex = 68;
             this.pbplayer21.TabStop = false;
             this.pbplayer21.Visible = false;
@@ -488,9 +523,10 @@
             // 
             this.pbplayer35.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer35.Location = new System.Drawing.Point(932, 78);
+            this.pbplayer35.Location = new System.Drawing.Point(1243, 96);
+            this.pbplayer35.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer35.Name = "pbplayer35";
-            this.pbplayer35.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer35.Size = new System.Drawing.Size(35, 44);
             this.pbplayer35.TabIndex = 77;
             this.pbplayer35.TabStop = false;
             this.pbplayer35.Visible = false;
@@ -499,9 +535,10 @@
             // 
             this.pbplayer34.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer34.Location = new System.Drawing.Point(900, 78);
+            this.pbplayer34.Location = new System.Drawing.Point(1200, 96);
+            this.pbplayer34.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer34.Name = "pbplayer34";
-            this.pbplayer34.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer34.Size = new System.Drawing.Size(35, 44);
             this.pbplayer34.TabIndex = 76;
             this.pbplayer34.TabStop = false;
             this.pbplayer34.Visible = false;
@@ -510,9 +547,10 @@
             // 
             this.pbplayer33.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer33.Location = new System.Drawing.Point(868, 78);
+            this.pbplayer33.Location = new System.Drawing.Point(1157, 96);
+            this.pbplayer33.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer33.Name = "pbplayer33";
-            this.pbplayer33.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer33.Size = new System.Drawing.Size(35, 44);
             this.pbplayer33.TabIndex = 75;
             this.pbplayer33.TabStop = false;
             this.pbplayer33.Visible = false;
@@ -521,9 +559,10 @@
             // 
             this.pbplayer32.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer32.Location = new System.Drawing.Point(836, 78);
+            this.pbplayer32.Location = new System.Drawing.Point(1115, 96);
+            this.pbplayer32.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer32.Name = "pbplayer32";
-            this.pbplayer32.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer32.Size = new System.Drawing.Size(35, 44);
             this.pbplayer32.TabIndex = 74;
             this.pbplayer32.TabStop = false;
             this.pbplayer32.Visible = false;
@@ -532,9 +571,10 @@
             // 
             this.pbplayer31.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer31.Location = new System.Drawing.Point(804, 78);
+            this.pbplayer31.Location = new System.Drawing.Point(1072, 96);
+            this.pbplayer31.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer31.Name = "pbplayer31";
-            this.pbplayer31.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer31.Size = new System.Drawing.Size(35, 44);
             this.pbplayer31.TabIndex = 73;
             this.pbplayer31.TabStop = false;
             this.pbplayer31.Visible = false;
@@ -543,9 +583,10 @@
             // 
             this.pbplayer45.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer45.Location = new System.Drawing.Point(932, 215);
+            this.pbplayer45.Location = new System.Drawing.Point(1243, 265);
+            this.pbplayer45.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer45.Name = "pbplayer45";
-            this.pbplayer45.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer45.Size = new System.Drawing.Size(35, 44);
             this.pbplayer45.TabIndex = 82;
             this.pbplayer45.TabStop = false;
             this.pbplayer45.Visible = false;
@@ -554,9 +595,10 @@
             // 
             this.pbplayer44.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer44.Location = new System.Drawing.Point(900, 215);
+            this.pbplayer44.Location = new System.Drawing.Point(1200, 265);
+            this.pbplayer44.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer44.Name = "pbplayer44";
-            this.pbplayer44.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer44.Size = new System.Drawing.Size(35, 44);
             this.pbplayer44.TabIndex = 81;
             this.pbplayer44.TabStop = false;
             this.pbplayer44.Visible = false;
@@ -565,9 +607,10 @@
             // 
             this.pbplayer43.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer43.Location = new System.Drawing.Point(868, 215);
+            this.pbplayer43.Location = new System.Drawing.Point(1157, 265);
+            this.pbplayer43.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer43.Name = "pbplayer43";
-            this.pbplayer43.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer43.Size = new System.Drawing.Size(35, 44);
             this.pbplayer43.TabIndex = 80;
             this.pbplayer43.TabStop = false;
             this.pbplayer43.Visible = false;
@@ -576,9 +619,10 @@
             // 
             this.pbplayer42.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer42.Location = new System.Drawing.Point(836, 215);
+            this.pbplayer42.Location = new System.Drawing.Point(1115, 265);
+            this.pbplayer42.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer42.Name = "pbplayer42";
-            this.pbplayer42.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer42.Size = new System.Drawing.Size(35, 44);
             this.pbplayer42.TabIndex = 79;
             this.pbplayer42.TabStop = false;
             this.pbplayer42.Visible = false;
@@ -587,9 +631,10 @@
             // 
             this.pbplayer41.BackgroundImage = global::BlackJack.Properties.Resources.PP;
             this.pbplayer41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbplayer41.Location = new System.Drawing.Point(804, 215);
+            this.pbplayer41.Location = new System.Drawing.Point(1072, 265);
+            this.pbplayer41.Margin = new System.Windows.Forms.Padding(4);
             this.pbplayer41.Name = "pbplayer41";
-            this.pbplayer41.Size = new System.Drawing.Size(26, 36);
+            this.pbplayer41.Size = new System.Drawing.Size(35, 44);
             this.pbplayer41.TabIndex = 78;
             this.pbplayer41.TabStop = false;
             this.pbplayer41.Visible = false;
@@ -599,9 +644,10 @@
             this.ckplayer1.BackColor = System.Drawing.Color.Transparent;
             this.ckplayer1.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ckplayer1.Location = new System.Drawing.Point(184, 215);
+            this.ckplayer1.Location = new System.Drawing.Point(245, 265);
+            this.ckplayer1.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer1.Name = "ckplayer1";
-            this.ckplayer1.Size = new System.Drawing.Size(50, 50);
+            this.ckplayer1.Size = new System.Drawing.Size(67, 62);
             this.ckplayer1.TabIndex = 83;
             this.ckplayer1.TabStop = false;
             this.ckplayer1.Visible = false;
@@ -612,9 +658,10 @@
             this.ckplayer2.BackColor = System.Drawing.Color.Transparent;
             this.ckplayer2.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ckplayer2.Location = new System.Drawing.Point(184, 80);
+            this.ckplayer2.Location = new System.Drawing.Point(245, 98);
+            this.ckplayer2.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer2.Name = "ckplayer2";
-            this.ckplayer2.Size = new System.Drawing.Size(50, 50);
+            this.ckplayer2.Size = new System.Drawing.Size(67, 62);
             this.ckplayer2.TabIndex = 84;
             this.ckplayer2.TabStop = false;
             this.ckplayer2.Visible = false;
@@ -625,9 +672,10 @@
             this.ckplayer3.BackColor = System.Drawing.Color.Transparent;
             this.ckplayer3.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ckplayer3.Location = new System.Drawing.Point(734, 80);
+            this.ckplayer3.Location = new System.Drawing.Point(979, 98);
+            this.ckplayer3.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer3.Name = "ckplayer3";
-            this.ckplayer3.Size = new System.Drawing.Size(50, 50);
+            this.ckplayer3.Size = new System.Drawing.Size(67, 62);
             this.ckplayer3.TabIndex = 85;
             this.ckplayer3.TabStop = false;
             this.ckplayer3.Visible = false;
@@ -638,9 +686,10 @@
             this.ckplayer4.BackColor = System.Drawing.Color.Transparent;
             this.ckplayer4.BackgroundImage = global::BlackJack.Properties.Resources.CHECK;
             this.ckplayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ckplayer4.Location = new System.Drawing.Point(734, 217);
+            this.ckplayer4.Location = new System.Drawing.Point(979, 267);
+            this.ckplayer4.Margin = new System.Windows.Forms.Padding(4);
             this.ckplayer4.Name = "ckplayer4";
-            this.ckplayer4.Size = new System.Drawing.Size(50, 50);
+            this.ckplayer4.Size = new System.Drawing.Size(67, 62);
             this.ckplayer4.TabIndex = 86;
             this.ckplayer4.TabStop = false;
             this.ckplayer4.Visible = false;
@@ -652,9 +701,10 @@
             this.ketQuaPlayer1.BackColor = System.Drawing.Color.Transparent;
             this.ketQuaPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ketQuaPlayer1.ForeColor = System.Drawing.Color.White;
-            this.ketQuaPlayer1.Location = new System.Drawing.Point(181, 226);
+            this.ketQuaPlayer1.Location = new System.Drawing.Point(241, 278);
+            this.ketQuaPlayer1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ketQuaPlayer1.Name = "ketQuaPlayer1";
-            this.ketQuaPlayer1.Size = new System.Drawing.Size(66, 24);
+            this.ketQuaPlayer1.Size = new System.Drawing.Size(85, 29);
             this.ketQuaPlayer1.TabIndex = 87;
             this.ketQuaPlayer1.Text = "label5";
             this.ketQuaPlayer1.Visible = false;
@@ -665,9 +715,10 @@
             this.ketQuaPlayer2.BackColor = System.Drawing.Color.Transparent;
             this.ketQuaPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ketQuaPlayer2.ForeColor = System.Drawing.Color.White;
-            this.ketQuaPlayer2.Location = new System.Drawing.Point(181, 90);
+            this.ketQuaPlayer2.Location = new System.Drawing.Point(241, 111);
+            this.ketQuaPlayer2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ketQuaPlayer2.Name = "ketQuaPlayer2";
-            this.ketQuaPlayer2.Size = new System.Drawing.Size(66, 24);
+            this.ketQuaPlayer2.Size = new System.Drawing.Size(85, 29);
             this.ketQuaPlayer2.TabIndex = 88;
             this.ketQuaPlayer2.Text = "label5";
             this.ketQuaPlayer2.Visible = false;
@@ -678,9 +729,10 @@
             this.ketQuaPlayer3.BackColor = System.Drawing.Color.Transparent;
             this.ketQuaPlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ketQuaPlayer3.ForeColor = System.Drawing.Color.White;
-            this.ketQuaPlayer3.Location = new System.Drawing.Point(718, 90);
+            this.ketQuaPlayer3.Location = new System.Drawing.Point(957, 111);
+            this.ketQuaPlayer3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ketQuaPlayer3.Name = "ketQuaPlayer3";
-            this.ketQuaPlayer3.Size = new System.Drawing.Size(66, 24);
+            this.ketQuaPlayer3.Size = new System.Drawing.Size(85, 29);
             this.ketQuaPlayer3.TabIndex = 89;
             this.ketQuaPlayer3.Text = "label5";
             this.ketQuaPlayer3.Visible = false;
@@ -691,9 +743,10 @@
             this.ketQuaPlayer4.BackColor = System.Drawing.Color.Transparent;
             this.ketQuaPlayer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ketQuaPlayer4.ForeColor = System.Drawing.Color.White;
-            this.ketQuaPlayer4.Location = new System.Drawing.Point(730, 230);
+            this.ketQuaPlayer4.Location = new System.Drawing.Point(973, 283);
+            this.ketQuaPlayer4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ketQuaPlayer4.Name = "ketQuaPlayer4";
-            this.ketQuaPlayer4.Size = new System.Drawing.Size(66, 24);
+            this.ketQuaPlayer4.Size = new System.Drawing.Size(85, 29);
             this.ketQuaPlayer4.TabIndex = 90;
             this.ketQuaPlayer4.Text = "label5";
             this.ketQuaPlayer4.Visible = false;
@@ -704,20 +757,36 @@
             this.ketQua.BackColor = System.Drawing.Color.Transparent;
             this.ketQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ketQua.ForeColor = System.Drawing.Color.White;
-            this.ketQua.Location = new System.Drawing.Point(460, 321);
+            this.ketQua.Location = new System.Drawing.Point(613, 395);
+            this.ketQua.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ketQua.Name = "ketQua";
-            this.ketQua.Size = new System.Drawing.Size(66, 24);
+            this.ketQua.Size = new System.Drawing.Size(85, 29);
             this.ketQua.TabIndex = 91;
             this.ketQua.Text = "label5";
             this.ketQua.Visible = false;
             // 
+            // startMultiplay
+            // 
+            this.startMultiplay.BackColor = System.Drawing.Color.Transparent;
+            this.startMultiplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startMultiplay.ForeColor = System.Drawing.Color.White;
+            this.startMultiplay.Image = global::BlackJack.Properties.Resources.Asset_2;
+            this.startMultiplay.Location = new System.Drawing.Point(1001, 441);
+            this.startMultiplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.startMultiplay.Name = "startMultiplay";
+            this.startMultiplay.Size = new System.Drawing.Size(292, 81);
+            this.startMultiplay.TabIndex = 92;
+            this.startMultiplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.startMultiplay.Click += new System.EventHandler(this.startMultiplay_Click);
+            // 
             // Multi_Client
             // 
             this.AcceptButton = this.btnSend;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.Properties.Resources.BackGround_Table_1x;
-            this.ClientSize = new System.Drawing.Size(972, 577);
+            this.ClientSize = new System.Drawing.Size(1296, 710);
+            this.Controls.Add(this.startMultiplay);
             this.Controls.Add(this.ketQua);
             this.Controls.Add(this.ketQuaPlayer4);
             this.Controls.Add(this.ketQuaPlayer3);
@@ -771,6 +840,7 @@
             this.Controls.Add(this.player3);
             this.Controls.Add(this.player2);
             this.Controls.Add(this.player1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Multi_Client";
             this.Text = "Multi_Client";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Client_FormClosed);
@@ -864,5 +934,6 @@
         private System.Windows.Forms.Label ketQuaPlayer3;
         private System.Windows.Forms.Label ketQuaPlayer4;
         private System.Windows.Forms.Label ketQua;
+        private System.Windows.Forms.Label startMultiplay;
     }
 }

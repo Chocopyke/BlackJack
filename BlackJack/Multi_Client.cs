@@ -89,6 +89,7 @@ namespace BlackJack
         {
             while (true)
             {
+                Thread.Sleep(50);
                 try
                 {
 
@@ -212,7 +213,7 @@ namespace BlackJack
                                 this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
                                 {
                                     waitingLoading.Visible = false;
-                                    btnDan.Visible = true;
+                                    startMultiplay.Visible = true;
                                 });
                                 Thread.Sleep(50);
                                 client.Send(Serialize("20:"));
@@ -1393,6 +1394,21 @@ namespace BlackJack
         private void Multi_Client_Load(object sender, EventArgs e)
         {
             this.MaximizeBox = false;
+            startMultiplay.Visible = false;
+
+        }
+
+        private void startMultiplay_Click(object sender, EventArgs e)
+        {
+            client.Send(Serialize("05:" + user.getSum().ToString()));
+            client.Send(Serialize("12:"));
+            this.BeginInvoke((MethodInvoker)delegate            //How do I update the GUI from another thread?
+            {
+                waitingLoading.Visible = true;
+                btnRut.Visible = false;
+                btnDan.Visible = false;
+            });
+            startMultiplay.Visible = false;
         }
     }
 }
