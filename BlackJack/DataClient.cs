@@ -21,12 +21,16 @@ namespace BlackJack
 
         private void DataClient_Load(object sender, EventArgs e)
         {
-            this.MaximizeBox = false;
             conn.Open();
-            var dap = new SqlDataAdapter("SELECT * FROM CLIENT", conn);
+            SqlDataAdapter dapt = new SqlDataAdapter("delete from client", conn);
             var table = new DataTable();
-            dap.Fill(table);
-            datatClient.DataSource = table;
+            dapt.Fill(table);
+            this.MaximizeBox = false;
+
+            var dap = new SqlDataAdapter("SELECT * FROM CLIENT", conn);
+            var tablet = new DataTable();
+            dap.Fill(tablet);
+            datatClient.DataSource = tablet;
         }
 
         
