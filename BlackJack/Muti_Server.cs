@@ -28,7 +28,7 @@ namespace BlackJack
         string ipclient;
         string tempCai = "";
 
-        SqlConnection conn = new SqlConnection("Server=.;database=Client;Integrated Security=True");
+        SqlConnection conn = new SqlConnection("Server=.\\SQLEXPRESS;database=Client;Integrated Security=True");
         public Muti_Server()
         {
             InitializeComponent();
@@ -68,7 +68,7 @@ namespace BlackJack
                         if (clientList.Count() == 5)
                         {
                             AddMessage("Đã đạt số client tối đa".ToString());
-                            //return;
+                            break;
                         }
 
                         server.Listen(100);
@@ -76,11 +76,8 @@ namespace BlackJack
                         clientList.Add(client);
 
                         Thread receive = new Thread(Receive);
-
                         receive.IsBackground = true;
                         receive.Start(client);
-
-
                         var dap = new SqlDataAdapter("SELECT COUNT(IP) FROM CLIENT", conn);
                         var table = new DataTable();
                         dap.Fill(table);
@@ -688,6 +685,7 @@ namespace BlackJack
                                 clientList[0].Send(Serialize("54:" + message.Substring(3)));
                                 break;
                             }
+
                         default:
                             break;
                     }

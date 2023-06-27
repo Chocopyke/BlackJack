@@ -20,12 +20,15 @@ namespace BlackJack
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Server=.;database=Client;Integrated Security=True");
+
+            SqlConnection conn = new SqlConnection("Server=.\\SQLEXPRESS;database=Client;Integrated Security=True");
             string acc = accBox.Text;
             string pas = pasBox.Text;
+            
             SqlDataAdapter dap = new SqlDataAdapter($"select passwd from account where accnt = '{acc}' and passwd = '{pas}'", conn);
             DataTable dt = new DataTable();
             dap.Fill(dt);
+
             if (dt.Rows.Count > 0 )
             {
                 if (pas == dt.Rows[0][0].ToString())
