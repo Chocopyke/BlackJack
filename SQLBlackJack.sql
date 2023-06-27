@@ -7,7 +7,6 @@ CREATE TABLE CLIENT(
 	IP CHAR(15) NOT NULL,
 	NUMOFCARD INT,	
 	SUMCARD INT,
-	DAN BINARY,
 	CONSTRAINT PK_KH PRIMARY KEY(ID)
 )
 
@@ -25,7 +24,4 @@ insert into account values ('acc5', '5')
 
 select * from account
 
-insert into client(ID, IP) values (1, 'anhkhoamap')
-select * from client
-delete from client
 drop table client
